@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap"
+      rel="stylesheet"
+    />
     <title>Náš zvěřinec</title>
   </head>
   <body>
     <div class="container">
       <section class="header">
         <nav>
-          <span>NAŠE ZVĚŘ</span>
-          <a href="#">Úvod</a>
+          <span class="header header--none">NAŠE ZVĚŘ</span>
+          <a href="#" alt="header header--underlined">Úvod</a>
           <a href="#">Micka</a>
           <a href="#">Bety</a>
           <a href="#">Máša</a>
@@ -20,71 +26,85 @@
           <a href="#">Kontakt</a>
         </nav>
         <div class="header__photo">
-          <img src="Bety/Bety.JPG" alt="Úvodní" />
+          <img src="\BaM.jpg" alt="Úvodní" />
         </div>
       </section>
-      <div class="home">
-        <section class="home__welcome">
-          <p class="home__welcome home__welcome--italics">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, vel
-            nobis? Dicta incidunt optio.
+      <div class="intro">
+        <section class="intro__welcome">
+          <h1>Vítejte</h1>
+          <p class="intro__welcome intro__welcome--italics">
+            Vítejte na stránce o našich chlupatých čtyřnohých členech rodiny,
+            bez kterých si už nedokážeme představit náš život. Naše parta se
+            skládá ze dvou koček a jedné fenky. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quis magnam sit dignissimos earum
+            sequi, ex dolore quia adipisci nisi quo, aliquid harum maxime quod
+            eius in. Sequi recusandae distinctio iure.
           </p>
         </section>
-        <section class="home__photo">
-          <p>Tady bude foto</p>
+        <section class="intro__photo">
+          <img src="/Micka/Micka2.jpg" alt="Micka" />
         </section>
       </div>
-      <div class="pets">
-        <section class="pets__selection">
+      <div class="micka">
+        <h1>Micka</h1>
+        <section class="micka__photo">
+          <img src="/Micka/Micka.jpg" alt="Micka" />
+        </section>
+        <section class="micka__intro">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
             temporibus natus eaque. Magnam ut, dolor quas, temporibus
             consectetur.
           </p>
         </section>
-        <section class="pets__main">
+      </div>
+      <div class="bety">
+        <h1>Bety</h1>
+        <section class="bety__photo">
+          <img src="/Bety/Bety2.JPG" alt="Bety" />
+        </section>
+        <section class="bety__intro">
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
-            aliquam error et dignissimos eaque nisi ea ex doloremque eligendi
-            dolorum natus, laboriosam amet quas similique ut iste voluptatum.
-            Tempore, minima?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+            temporibus natus eaque. Magnam ut, dolor quas, temporibus
+            consectetur.
+          </p>
+        </section>
+      </div>
+      <div class="masa">
+        <h1>Máša</h1>
+        <section class="masa__photo">
+          <img src="/Masa/Masa3.JPG" alt="Máša" />
+        </section>
+        <section class="masa__intro">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+            temporibus natus eaque. Magnam ut, dolor quas, temporibus
+            consectetur.
           </p>
         </section>
       </div>
 
       <div class="photogalery">
-        <section class="photogalery__profi">
-          <p class="photogalery__profi photogalery__profi--red">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-            debitis architecto, hic ducimus aut, enim tenetur aspernatur magnam
-            dolores omnis nihil consectetur possimus exercitationem in non natus
-            minima quod! Facilis?
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo odit
-            maiores dolore enim, error nemo autem deleniti molestiae ratione
-            sapiente recusandae accusamus, quo perspiciatis consectetur ad
-            debitis! Optio, similique esse.
-          </p>
-        </section>
-        <section class="photogalery__others">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, autem
-            quae aut quidem maxime dolores ab voluptate laudantium adipisci
-            voluptas, cumque dignissimos aspernatur in sit, nam iure dicta quod
-            praesentium?
-          </p>
-          <p class="photogalery__others photogalery__others--ackn">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
-            nihil iste a fugit eum, totam adipisci distinctio, eveniet voluptate
-            natus consequuntur excepturi veritatis ducimus maiores delectus
-            pariatur facilis, quam eos.
-          </p>
-        </section>
+        <h1>Fotogalerie</h1>
+        <img src="/Micka/Mica.jpg" alt="Míca" />
+        <img src="/Micka/Micka3.jpg" alt="Míca" />
+        <img src="/Micka/Micka4.jpg" alt="Míca" />
+        <img src="/Bety/Bety.JPG" alt="Bety" />
+        <img src="/Bety/Bety3.JPG" alt="Bety" />
+        <img src="/Bety/Betyn.JPG" alt="Bety" />
+        <img src="/Masa/Masa6.jpg" alt="Máša" />
+        <img src="/Masa/Masa7.jpg" alt="Máša" />
+        <img src="/Masa/Masa8.jpg" alt="Máša" />
       </div>
       <div class="contact">
-        <p class="contact contact--blue">Iva Havranová<br />Májová 123</p>
-        <p>iva.havranova@email.cz<br />+420 123 456 789</p>
+        <h1>Kontakt</h1>
+        <p>U psa a dvou koček</p>
+        <p>Národní 123, 123 45 Praha 1</p>
+        <p>+421 123 456 789</p>
+      </div>
+      <div class="footer">
+        <p>Děkujeme za návštěvu</p>
       </div>
     </div>
   </body>
