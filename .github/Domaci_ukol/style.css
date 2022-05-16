@@ -1,13 +1,17 @@
-body {
-  margin: O;
+.container {
+  margin: auto;
 }
 
 img {
   max-width: 80%;
 }
 
+.intro__photo--margin {
+  margin-bottom: 1rem;
+}
 .header__photo--cover {
   max-width: 100%;
+  margin-bottom: 0;
 }
 
 .header--none {
@@ -21,6 +25,7 @@ img {
   font-family: "Roboto Flex", sans-serif;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .header,
@@ -32,6 +37,7 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: 1rem 0 1rem 0;
 }
 a {
   text-decoration: none;
@@ -65,5 +71,96 @@ h1 {
 }
 
 p {
-  margin: 0;
+  margin: 1rem;
+}
+
+.intro__welcome--italics {
+  font-style: italic;
+}
+
+.photogalery {
+  padding-bottom: 1rem;
+}
+
+.footer--bold {
+  font-weight: bold;
+}
+.contact--big {
+  font-size: 2rem;
+}
+
+@media (min-width: 860px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .intro,
+  .micka,
+  .bety,
+  .masa {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header--none {
+    display: contents;
+    font-weight: bold;
+  }
+  .header {
+    padding: 0 1rem 0 1rem;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr minmax(200px, 550px);
+  }
+
+  .micka,
+  .masa {
+    grid-template-columns: minmax(min-content, 50px) 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .bety {
+    grid-template-columns: 1fr 1fr minmax(min-content, 50px);
+  }
+  .bety--right {
+    grid-column-start: 3;
+  }
+  .bety__intro {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  .bety__photo {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  .photogalery {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10% 30% 30% 30%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+  .photogalery--top {
+    grid-column: span 3;
+  }
+
+  .micka,
+  .bety,
+  .masa {
+    padding: 1rem;
+  }
+  .micka__intro,
+  .bety__intro,
+  .masa__intro {
+    align-self: end;
+  }
 }
