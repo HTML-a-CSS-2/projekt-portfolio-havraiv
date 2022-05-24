@@ -5,156 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Iva Havranová</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Náš zvěřinec</title>
   </head>
   <body>
     <div class="container">
       <section class="header">
         <nav>
-          <a href="#" class="header header--bold">Domů</a>
-          <a href="#">O mně</a>
-          <a href="#">Ušito</a>
-          <a href="#" class="header header--underlined">Fotogalerie</a>
-          <a href="#">Kontakt</a>
+          <span class="header header--none">NAŠE ZVĚŘ</span>
+          <a href="#intro" alt="header" class="header header--underlined"
+            >Úvod</a
+          >
+          <a href="#micka">Micka</a>
+          <a href="#bety">Bety</a>
+          <a href="#masa">Máša</a>
+          <a href="#photogalery">Fotogalerie</a>
+          <a href="#contact">Kontakt</a>
         </nav>
-        <div class="header__photo"></div>
-        <p>Tady bude obrázek</p>
-      </section>
-      <div class="main">
-        <section class="main__welcome">
-          <p class="main__welcome main__welcome--purple">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, vel
-            nobis? Dicta incidunt optio.
-          </p>
-        </section>
-        <section class="main__photo">
-          <p>Tady bude foto</p>
-        </section>
-      </div>
-      <div class="about">
-        <section class="about__selection">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
-            temporibus natus eaque. Magnam ut, dolor quas, temporibus
-            consectetur.
-          </p>
-        </section>
-        <section class="about__main">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
-            aliquam error et dignissimos eaque nisi ea ex doloremque eligendi
-            dolorum natus, laboriosam amet quas similique ut iste voluptatum.
-            Tempore, minima?
-          </p>
-        </section>
-      </div>
-      <div class="sewn">
-        <div class="sewn__wedding">
-          <p>Seznam holek - svatební šaty</p>
-          <ul>
-            <li class="sewn__wedding sewn_wedding--anna">Anna</li>
-            <li>Barbora</li>
-            <li>Lenka</li>
-            <li>Petra</li>
-            <li>Veronika</li>
-          </ul>
-          <section class="sewn__anna">
-            <h1 class="sewn__anna sewn__anna--bold">
-              Anna - moje první nevěsta
-            </h1>
-            <p class="sewn__anna sewn__anna--black">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              debitis facere eius totam aut molestias sint quod, ad voluptas
-              odit est enim nesciunt natus placeat aliquam id laudantium
-              perspiciatis mollitia!
-            </p>
-            <img class="sewn__photo" />
-          </section>
-          <section class="sewn__barbora">
-            <h1>Barbora</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
-              dicta iusto repudiandae? Quod tempore possimus dolor sapiente,
-              commodi velit ipsam inventore perferendis corrupti nulla sequi aut
-              ipsum, iusto maiores perspiciatis.
-            </p>
-            <img class="sewn__photo" />
-          </section>
-          <section class="sewn__lenka">
-            <h1>Lenka</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
-              dicta iusto repudiandae? Quod tempore possimus dolor sapiente,
-              commodi velit ipsam inventore perferendis corrupti nulla sequi aut
-              ipsum, iusto maiores perspiciatis.
-            </p>
-            <img class="sewn__photo" />
-          </section>
-          <section class="sewn__petra">
-            <h1>Petra</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
-              dicta iusto repudiandae? Quod tempore possimus dolor sapiente,
-              commodi velit ipsam inventore perferendis corrupti nulla sequi aut
-              ipsum, iusto maiores perspiciatis.
-            </p>
-            <img class="sewn__photo" />
-          </section>
-          <section class="sewn__veronika">
-            <h1>Veronika</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
-              dicta iusto repudiandae? Quod tempore possimus dolor sapiente,
-              commodi velit ipsam inventore perferendis corrupti nulla sequi aut
-              ipsum, iusto maiores perspiciatis.
-            </p>
-            <img class="sewn__photo" />
-          </section>
-          <section class="sewn__others">
-            <p>Seznam holek - ostatní šaty</p>
-            <ul>
-              <li class="sewn__others sewn__others--italics">Simona</li>
-              <li>Šárka</li>
-              <li>Dominika</li>
-              <li>Petra</li>
-              <li>Natálie</li>
-            </ul>
-          </section>
+
+        <div class="header__photo">
+          <img src="\BaM.jpg" alt="Úvodní" class="header__photo--cover" />
         </div>
-      </div>
-      <div class="photogalery">
-        <section class="photogalery__profi">
-          <p class="photogalery__profi photogalery__profi--red">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-            debitis architecto, hic ducimus aut, enim tenetur aspernatur magnam
-            dolores omnis nihil consectetur possimus exercitationem in non natus
-            minima quod! Facilis?
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo odit
-            maiores dolore enim, error nemo autem deleniti molestiae ratione
-            sapiente recusandae accusamus, quo perspiciatis consectetur ad
-            debitis! Optio, similique esse.
+      </section>
+      <div class="intro" id="intro">
+        <section class="intro__welcome">
+          <h1>Vítejte</h1>
+          <p class="intro__welcome intro__welcome--italics">
+            Vítejte na stránce o našich chlupatých čtyřnohých členech rodiny,
+            bez kterých si už nedokážeme představit náš život. Naše parta se
+            skládá ze dvou koček a jedné fenky. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quis magnam sit dignissimos earum
+            sequi, ex dolore quia adipisci nisi quo, aliquid harum maxime quod
+            eius in. Sequi recusandae distinctio iure.
           </p>
         </section>
-        <section class="photogalery__others">
+        <section class="intro__photo">
+          <img
+            src="/Micka/Micka2.jpg"
+            alt="Micka"
+            class="intro__photo intro__photo--margin"
+          />
+        </section>
+      </div>
+      <div class="micka" id="micka">
+        <h1>Micka</h1>
+        <section class="micka__photo">
+          <img src="/Micka/Micka.jpg" alt="Micka" />
+        </section>
+        <section class="micka__intro">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, autem
-            quae aut quidem maxime dolores ab voluptate laudantium adipisci
-            voluptas, cumque dignissimos aspernatur in sit, nam iure dicta quod
-            praesentium?
-          </p>
-          <p class="photogalery__others photogalery__others--ackn">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
-            nihil iste a fugit eum, totam adipisci distinctio, eveniet voluptate
-            natus consequuntur excepturi veritatis ducimus maiores delectus
-            pariatur facilis, quam eos.
+            Micka je nejstarší člen naší zvířecí party, je jí krásných 18 let a
+            za svůj život si zažila spoustu zvířat kolem sebe. Teď se nejraději
+            válí doma a užívá si důchodu, ven se jí už absolutně nechce a taky
+            Bety s Mášou nesnáší. Má prostě ráda svůj klid.
           </p>
         </section>
       </div>
-      <div class="contact">
-        <p class="contact contact--blue">Iva Havranová<br />Májová 123</p>
-        <p>iva.havranova@email.cz<br />+420 123 456 789</p>
+      <div class="bety" id="bety">
+        <h1 class="bety bety--right">Bety</h1>
+        <section class="bety__photo">
+          <img src="/Bety/Bety2.JPG" alt="Bety" />
+        </section>
+        <section class="bety__intro">
+          <p>
+            Bety si mamka pořídila, když jsem vylítla z rodinného hnízda po
+            ségře i já. Je to jejich nový rozmazlený dítě a nedáme na ni
+            dopustit. Kdo říkal, že lásku si za peníze nekoupíš, tak lhal. Je to
+            mimino všech a všechny otravuje svojí potřebou neustále něco házet,
+            míček, talíř, cokoli.
+          </p>
+        </section>
+      </div>
+      <div class="masa" id="masa">
+        <h1>Máša</h1>
+        <section class="masa__photo">
+          <img src="/Masa/Masa3.JPG" alt="Máša" />
+        </section>
+        <section class="masa__intro">
+          <p>
+            Máša je u nás necelý dva roky, měla bejt jako kotě utopená, a tak
+            jsme to s ní zkusili. Báli jsme se, co na ni Bety s Mickou. Měla být
+            venkovní kočka, takže záleželo, jak ji přijme Bety. Začátky byly
+            divoký, ale teď jsou to nejlepší kámošky. Obě se někdy perou, ale s
+            láskou, nemají si co vyčítat. Často spolu usnou v boudě. Jo a Máša
+            je kocour, což jsme zjistili dost pozdě :).
+          </p>
+        </section>
+      </div>
+
+      <div class="photogalery" id="photogalery">
+        <h1 class="photogalery photogalery--top">Fotogalerie</h1>
+        <img src="/Micka/Mica.jpg" alt="Míca" />
+        <img src="/Micka/Micka3.jpg" alt="Míca" />
+        <img src="/Micka/Micka4.jpg" alt="Míca" />
+        <img src="/Bety/Bety.JPG" alt="Bety" />
+        <img src="/Bety/Bety3.JPG" alt="Bety" />
+        <img src="/Bety/Betyn.JPG" alt="Bety" />
+        <img src="/Masa/Masa6.jpg" alt="Máša" />
+        <img src="/Masa/Masa7.jpg" alt="Máša" />
+        <img src="/Masa/Masa8.jpg" alt="Máša" />
+      </div>
+      <div class="contact" id="contact">
+        <h1>Kontakt</h1>
+        <p class="contact contact--big">U psa a dvou koček</p>
+        <p>Národní 123, 123 45 Praha 1</p>
+        <p>+421 123 456 789</p>
+      </div>
+      <div class="footer">
+        <p class="footer footer--bold">Děkujeme za návštěvu</p>
       </div>
     </div>
   </body>
