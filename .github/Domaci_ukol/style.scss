@@ -1,3 +1,16 @@
+$TopBottColour: #eebb4d;
+$MainLightColour: #f5f1da;
+$ContColour: #96bb7c;
+$MainDarkColour: #e3dfc8;
+$NavMargin: 1rem 0 1rem 0;
+$DisplayFlex: flex;
+$AlignCenter: center;
+@mixin text($color, $size, $decoration) {
+  color: $color;
+  font-size: $size;
+  font-style: $decoration;
+}
+
 .container {
   margin: auto;
 }
@@ -8,85 +21,80 @@ img {
 
 .container {
   font-family: "Roboto Flex", sans-serif;
-  display: flex;
+  display: $DisplayFlex;
   flex-direction: column;
-  text-align: center;
+  text-align: $AlignCenter;
 }
 
 .header {
-  background-color: #eebb4d;
-}
-.header--underlined {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
-}
-.header--none {
-  display: none;
-}
-.header__photo--cover {
-  max-width: 100%;
-  margin-bottom: 0;
+  background-color: $TopBottColour;
+  &--underlined {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+  }
+  &--none {
+    display: none;
+  }
+  &__photo--cover {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .footer {
-  background-color: #eebb4d;
-}
-.footer--bold {
-  font-weight: bold;
+  background-color: $TopBottColour;
+  &--bold {
+    font-weight: bold;
+  }
 }
 
 nav {
-  display: flex;
+  display: $DisplayFlex;
   flex-direction: column;
-  text-align: center;
-  margin: 1rem 0 1rem 0;
+  text-align: $AlignCenter;
+  margin: $NavMargin;
 }
-
 a {
   text-decoration: none;
   padding: 1px;
   color: black;
-}
-a:hover {
-  text-decoration: underline;
-  font-size: 120%;
+  &:hover {
+    text-decoration: underline;
+    font-size: 120%;
+  }
 }
 
 .contact {
-  background-color: #96bb7c;
-  color: rgb(55, 54, 54);
-  font-size: 2rem;
-  font-style: italic;
-}
-.contact--big {
-  font-size: 2rem;
+  background-color: $ContColour;
+  @include text(rgb(55, 54, 54), 2rem, italic);
+  &--big {
+    font-size: 2rem;
+  }
 }
 
 .bety,
 .photogalery {
-  background-color: #e3dfc8;
+  background-color: $MainDarkColour;
 }
 
 .intro {
-  background-color: #e3dfc8;
-}
-.intro__photo--margin {
-  margin: 1rem 0 1rem 0;
-}
-.intro__welcome--italics {
-  font-style: italic;
+  background-color: $MainDarkColour;
+  &__photo--margin {
+    margin: $NavMargin;
+  }
+  &__welcome--italics {
+    font-style: italic;
+  }
 }
 
 .micka,
 .masa {
-  background-color: #f5f1da;
+  background-color: $MainLightColour;
 }
 
 h1 {
-  margin: 1rem 0 1rem 0;
-  text-align: center;
+  margin: $NavMargin;
+  text-align: $AlignCenter;
 }
 
 p {
@@ -103,15 +111,14 @@ p {
   }
 
   .intro,
-.micka,
-.bety,
-.masa {
+  .micka,
+  .bety,
+  .masa {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-
   nav {
-    display: flex;
+    display: $DisplayFlex;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -120,7 +127,6 @@ p {
     display: contents;
     font-weight: bold;
   }
-
   .header {
     padding: 0 1rem 0 1rem;
   }
@@ -133,53 +139,47 @@ p {
   }
 
   .micka,
-.masa {
-    grid-template-columns: minmax(-webkit-min-content, 50px) 1fr 1fr;
+  .masa {
     grid-template-columns: minmax(min-content, 50px) 1fr 1fr;
     grid-template-rows: 1fr;
   }
-
   .bety {
-    grid-template-columns: 1fr 1fr minmax(-webkit-min-content, 50px);
     grid-template-columns: 1fr 1fr minmax(min-content, 50px);
   }
-
   .bety--right {
     grid-column-start: 3;
   }
-
   .bety__intro {
     grid-column-start: 1;
     grid-row-start: 1;
   }
-
   .bety__photo {
     grid-column-start: 2;
     grid-row-start: 1;
   }
-
-  .photogalery {
+  @mixin grid() {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 10% 30% 30% 30%;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
   }
-
+  .photogalery {
+    @include grid();
+    align-items: $AlignCenter;
+    justify-items: $AlignCenter;
+    justify-content: $AlignCenter;
+  }
   .photogalery--top {
     grid-column: span 3;
   }
 
   .micka,
-.bety,
-.masa {
+  .bety,
+  .masa {
     padding: 1rem;
   }
-
   .micka__intro,
-.bety__intro,
-.masa__intro {
+  .bety__intro,
+  .masa__intro {
     align-self: end;
   }
-}/*# sourceMappingURL=style.css.map */
+}
