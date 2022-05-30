@@ -64,6 +64,13 @@ a:hover {
   font-size: 2rem;
 }
 
+.contact__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
 .bety,
 .photogalery {
   background-color: #e3dfc8;
